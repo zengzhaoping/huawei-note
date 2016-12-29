@@ -1,0 +1,53 @@
+#!/bin/bash
+
+COMMAND=$0
+PRODUCT_NAME=$1
+
+if [ "$PRODUCT_NAME" = kobe ]; then
+    PLATFORM=8917
+elif [ "$PRODUCT_NAME" = aggassiz ]; then
+    PLATFORM=8917
+elif [ "$PRODUCT_NAME" = chopin ]; then
+    PLATFORM=8940
+elif [ "$PRODUCT_NAME" = bach ]; then
+    PLATFORM=8940
+fi
+
+build_all() {
+    ./huawei_sign_image.sh 8917 kobe 2>&1 | tee build_sign_image_`date +%Y%m%d%H%M%S`.txt
+    ./pack_nonhlos.sh 8917 kobe
+
+    #./huawei_sign_image.sh 8917 aggassiz 2>&1 | tee build_sign_image_`date +%Y%m%d%H%M%S`.txt
+    #./pack_nonhlos.sh 8917 aggassiz
+
+    #./huawei_sign_image.sh 8940 chopin 2>&1 | tee build_sign_image_`date +%Y%m%d%H%M%S`.txt
+    #./pack_nonhlos.sh 8940 chopin
+
+    #./huawei_sign_image.sh 8940 bach 2>&1 | tee build_sign_image_`date +%Y%m%d%H%M%S`.txt
+    #./pack_nonhlos.sh 8940 bach
+}
+
+help() {
+    echo "Usage: $COMMAND [product_name]"
+    echo "$COMMAND kobe"
+    echo "$COMMAND aggassiz"
+    echo "$COMMAND chopin"
+    echo "$COMMAND bach"
+    echo "$COMMAND all"
+}
+
+case $PRODUCT_NAME in
+    kobe|aggassiz|chopin|bach)
+        ./huawei_sign_image.sh $PLATFORM $PRODUCT_NAME 2>&1 | tee build_sign_image_`date +%Y%m%d%H%M%S`.txt
+        ./pack_nonhlos.sh $PLATFORM $PRODUCT_NAME
+        exit 1
+    ;;
+    all)
+        build_all
+        exit 1
+    ;;
+    help|*)
+        help
+        exit 1
+    ;;
+esac
