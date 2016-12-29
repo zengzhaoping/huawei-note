@@ -1,0 +1,38 @@
+image_list:
+1、#NON-HLOS.bin need：		
+
+					 "adsp          ./aggassiz/ADSP.8953.2.8.2/adsp_proc/obj/8937/signed/adsp.mbn                                
+                     "cpe_9335      ./aggassiz/CPE.TSF.1.0/cpe_proc/build/ms/bin/AAAAAAAA/cpe_9335.mbn                         
+                     #"fingerprint   ./aggassiz/TZ.BF.4.0.5/trustzone_images/build/ms/bin/ZALAANAA                
+                     #"fingerprint64 ./aggassiz/TZ.BF.4.0.5/trustzone_images/build/ms/bin/ZALAANAA               
+                     "mba           ./aggassiz/MPSS.JO.2.0/modem_proc/build/ms/bin/8937.genns.prod/mba.mbn                       
+                     "qdsp6sw       ./aggassiz/MPSS.JO.2.0/modem_proc/build/ms/bin/8937.genns.prod/qdsp6sw.mbn                     
+                     "cmnlib        ./aggassiz/TZ.BF.4.0.5/trustzone_images/build/ms/bin/ZALAANAA/cmnlib.mbn                    
+                     "cmnlib64      ./aggassiz/TZ.BF.4.0.5/trustzone_images/build/ms/bin/ZALAANAA/cmnlib64/mbn                  
+                     "cppf      	./aggassiz/TZ.BF.4.0.5/trustzone_images/build/ms/bin/ZALAANAA/cppf.mbn                        
+                     "dhsecapp      ./aggassiz/TZ.BF.4.0.5/trustzone_images/build/ms/bin/ZALAANAA/dhsecapp.mbn                    
+                     "qmpsecap      ./aggassiz/TZ.BF.4.0.5/trustzone_images/build/ms/bin/ZALAANAA/qmpsecap.mbn                    
+                     "isdbtmm       ./aggassiz/TZ.BF.4.0.5/trustzone_images/build/ms/bin/ZALAANAA/isdbtmm.mbn                   
+                     "gptest        ./aggassiz/TZ.BF.4.0.5/trustzone_images/build/ms/bin/ZALAANAA/gptest.mbn                      
+                     "securemm      ./aggassiz/TZ.BF.4.0.5/trustzone_images/build/ms/bin/ZALAANAA/securemm.mbn                    
+                     "venus         ./aggassiz/VIDEO.VE_ULT.3.1/venus_proc/build/bsp/asic/build/PROD/mbn/reloc/signed/venus.mbn   
+                     "smplap32      ./aggassiz/TZ.BF.4.0.5/trustzone_images/build/ms/bin/ZALAANAA/smplap32.mbn                    
+                     "smplap64      ./aggassiz/TZ.BF.4.0.5/trustzone_images/build/ms/bin/ZALAANAA/smplap64.mbn                    
+                     "wcnss         ./aggassiz/CNSS.PR.4.0/wcnss_proc/build/ms/bin/8937/reloc/wcnss.mbn  	                  
+                     "widevine      ./aggassiz/TZ.BF.4.0.5/trustzone_images/build/ms/bin/ZALAANAA/widevine.mbn 
+					 #"fpsilead      ./bach/TZ.BF.4.0.5/trustzone_images/build/ms/bin/ZALAANAA/fpsilead.mbn/*****p2600项目需要******/
+2、#fastboot need：
+					"devcfg         ./aggassiz/upgrade/devcfg.mbn                  
+                    "tz             ./aggassiz/upgrade/tz.mbn                  			
+                    "sbl1           ./aggassiz/upgrade/sbl1.mbn                  
+                    "rpm            ./aggassiz/upgrade/rpm.mbn                   
+                    "cmnlib         ./aggassiz/upgrade/cmnlib.mbn                  
+                    "cmnlib64       ./aggassiz/upgrade/cmnlib64.mbn                  
+                    "lksecapp       ./aggassiz/upgrade/lksecapp.mbn                  
+                    "keymaster      ./aggassiz/upgrade/keymaster.mbn                  
+                    "emmc_appsboot  ./aggassiz/upgrade/emmc_appsboot.mbn                  
+                    "prog_emmc_firehose_8917_ddr    ./aggassiz/upgrade/prog_emmc_firehose_8917_ddr.mbn
+
+3、#package need：
+    ./aggassiz/MSM8917.LA.2.0/contents.xml	
+	./aggassiz/MSM8917.LA.2.0/common/buildbuild.py			
