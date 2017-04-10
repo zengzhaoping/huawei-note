@@ -120,28 +120,3 @@ EXIT /b  1
 EXIT /b  0
 /**********************fastboot end***********************************/
 
-=========================================================
-
-Licensed to:??? HUAWEI TECHNOLOGIES CO.,LTD.
-Serial number:? 1536-0694
-
-
---- BEGIN LICENSE KEY ---
-7Ga+O4EDJshK97jKYYGsxL37J3tVaCBjygk4tKLCnZKwSUPp1ipbKzRiO
-9oPSurXQQZ7Mpeo5neTXJESU0dvCjQDKG8ugD66N+hr-vy+KZiaHQ+wKW
-BaloIJlucyiDIGuWTzWXjDlZf6Q4BlB3ubm5cLSk0QrKCtLYMOBhh42Z2
---- END LICENSE KEY -----
-
-=========================================================
-
-
-Licensed to:    Huawei Device Co.,Ltd.
-Serial number:  9359-4830
-
---- BEGIN LICENSE KEY ---
--deRRlIQsVS-m1ID0UQxNz178K3oOcheTlgWqnIgN4tukjfBPzqLePaox
-R2+kOHsAvEx6YQUowGtk-hxGQkrN97YPRdB9-RF3rCxhGw+r3qch1O7w-
-jJXlIgwNEwDiEx6G6uCUngfgNowbOXAgKlT12h3OVcv447K74ysqUD1WQ
---- END LICENSE KEY -----
-
-
